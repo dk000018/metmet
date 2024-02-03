@@ -24,10 +24,17 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <title>MetMet - Metallic Metrics | Metal Weight Calculator</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div>
+      <h1 class="header"><span>Met</span>allic <span>Met</span>rics </h1>
+      <h1 class="title">Metal Weight Calculator</h1>
+    </div>
+    
+    
+    
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -39,5 +46,33 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <footer>
+      <h2>How It's Done</h2>
+      <h4>Formula of Weight = Density x Volume</h4>
+      <h4>W = &rho; x V kg</h4>
+      <p><strong> Density ( &rho; ) : </strong> The density of the metals are already preloaded in kg/m<sup>3</sup> </p>
+      <h4>Volume of a cuboid (which is rectangle here) = Length x Width x Height</h4>
+      <h4>V = L x w x h mm<sup>3</sup></h4>
+      <h4>Volume of a cylinder = Diameter x Height</h4>
+      <h4>V = &pi; r<sup>2</sup> h mm<sup>3</sup></h4>
+      <p>The <strong> mm<sup>3</sup> </strong> is then converted into <strong> m<sup>3</sup> </strong></p>
+      <h3>&there4; W = &rho; x V kg </h3>
+    </footer>
+    <footer class="end">
+      <p>Copyright &copy; <span id="copyrightYear"></span> | Designed and Developed by <span>Kamalesh Devaraj</span> | 
+        <a href="https://www.linkedin.com/in/dk18042002/"> Visit My Linkedin</a>
+      </p>
+    </footer>
+
+    <script>
+      // Update the copyright year dynamically
+      document.addEventListener("DOMContentLoaded", function() {
+          var copyrightYearElement = document.getElementById("copyrightYear");
+          if (copyrightYearElement) {
+              var currentYear = new Date().getFullYear();
+              copyrightYearElement.textContent = currentYear;
+          }
+      });
+  </script>
   </body>
 </html>

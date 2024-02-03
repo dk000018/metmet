@@ -1,13 +1,112 @@
-body {
+body{
+  width: 100%;
+  text-align: center;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.title{
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.header{
+  margin: 0;
+ background-color: black;
+ color: white;
+}
+
+span{
+  color: #FDD017;
+}
+
+.material{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.material select{
+  font-size: 1.15rem;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.radio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+img{
+  padding-left: 5rem;
+}
+
+
+.colradio{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+input[type="radio"] {
+  width: 1rem; /* Set the width as needed */
+  height: 1rem;
+}
+
+.dim{
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.dim input{
+  border: 1px solid black;
+  font-size: 1.05rem;
+  border-radius: 5px;
+}
+
+.result{
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+}
+.result h1{
+  padding: 0.5rem 0;
+}
+
+.result span{
+  color: #FDD017;
+}
+
+.end{
+  background-color: black;
+  color: white;
+  margin-bottom: 0;
+}
+.end p{
+  padding: 1rem 0;
+  margin-bottom: 0;
+}
+.end a{
+  color: white;
+}
+
+@media screen and (max-width : 768px) {
+    .radio{
+      flex-direction: column;
+    }
+    .radio img{
+      padding: 0;
+    }
+    .result{
+      font-size: 1.25rem;
+    }
 }
